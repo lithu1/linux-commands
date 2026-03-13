@@ -231,3 +231,111 @@ clear
 This removes previous commands from the screen and gives a clean terminal.
 
 
+
+## Day 3 – File Inspection Commands
+
+### 1. **head** (View Beginning of File)
+
+Displays the first few lines of a file.
+By default, it shows the first **10 lines**.
+
+```bash
+head file.txt
+```
+
+Show the first 5 lines:
+
+```bash
+head -n 5 file.txt
+```
+
+---
+
+### 2. **tail** (View End of File)
+
+Displays the last few lines of a file.
+By default, it shows the last **10 lines**.
+
+```bash
+tail file.txt
+```
+
+Show the last 5 lines:
+
+```bash
+tail -n 5 file.txt
+```
+
+Follow a file in real time (commonly used for logs):
+
+```bash
+tail -f app.log
+```
+
+---
+
+### 3. **wc** (Word Count)
+
+Used to count the number of **lines, words, and characters** in a file.
+
+```bash
+wc file.txt
+```
+
+Example output:
+
+```
+10  50  300 file.txt
+```
+
+Meaning:
+
+* 10 lines
+* 50 words
+* 300 characters
+
+Count only lines:
+
+```bash
+wc -l file.txt
+```
+
+---
+
+### 4. **history**
+
+Displays a list of previously executed commands in the terminal.
+
+```bash
+history
+```
+
+Run a command again using its number:
+
+```bash
+!5
+```
+
+This executes command number **5** from the history list.
+
+---
+
+### 5. **man** / **--help**
+
+Used to view the manual or help documentation for commands.
+
+Example using `man`:
+
+```bash
+man ls
+```
+
+If `man` is not available (like in Git Bash), use:
+
+```bash
+ls --help
+```
+
+Press **q** to exit the manual page.
+
+
